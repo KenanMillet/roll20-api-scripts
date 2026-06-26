@@ -2665,32 +2665,30 @@ var Anchor = Anchor || (() => {
         registerEventHandlers,
 
         // Public API for other scripts
-        API: {
-            getAnchor,
-            getChildren,
-            anchorObj,
-            createAnchorFor,
-            removeAnchor,
-            updateObj,
-            updateZOrder,
-            getPosition,
-            setPosition,
-            getRotation,
-            setRotation,
-            getScale,
-            setScale,
-            getFlipV,
-            setFlipV,
-            getFlipH,
-            setFlipH,
-            getZOffset,
-            getLocked,
-            getUnlocked,
-            lock,
-            unlock,
-            chainAnchorObjs,
-            unchainAnchorObjs,
-        },
+        getAnchor,
+        getChildren,
+        anchorObj,
+        createAnchorFor,
+        removeAnchor,
+        updateObj,
+        updateZOrder,
+        getPosition,
+        setPosition,
+        getRotation,
+        setRotation,
+        getScale,
+        setScale,
+        getFlipV,
+        setFlipV,
+        getFlipH,
+        setFlipH,
+        getZOffset,
+        getLocked,
+        getUnlocked,
+        lock,
+        unlock,
+        chainAnchorObjs,
+        unchainAnchorObjs,
     };
 })();
 
@@ -2698,8 +2696,4 @@ on('ready', () => {
     'use strict';
     Anchor.checkInstall();
     Anchor.registerEventHandlers();
-    // Expose the public API at the top level for other scripts:
-    //   Anchor.getAnchor(id), Anchor.anchorObj(...), etc.
-    Object.assign(Anchor, Anchor.API);
-    delete Anchor.API;
 });
