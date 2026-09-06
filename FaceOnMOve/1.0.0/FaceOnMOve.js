@@ -1272,7 +1272,7 @@ var FaceOnMOve = FaceOnMOve || (() => {
             motdHeader: '🧭 **FaceOnMOve** v' + SCRIPT_VERSION,
             motdStyle: { borderLeft: '3px solid #2e7d32' },
             help: {
-                description: 'Automatically rotates and/or flips tokens to face their direction of movement. Per-token and per-character overrides layer over global defaults. Supports rollable-token side swapping, horizontal-flip facing, waypoint grouping, snap-to-horizontal, steep up/down handling, in-place facing gestures, and an optional idle reset. Run `!fomo` with tokens selected to open the config menu.',
+                description: 'Automatically rotates and/or flips tokens to face their direction of movement. Per-token and per-character overrides layer over global defaults. Supports rollable-token side swapping, horizontal-flip facing, waypoint grouping, snap-to-horizontal, steep up/down handling, in-place facing gestures, and an optional idle reset. Run !fomo with tokens selected to open the config menu.',
                 changelog: [
                     { version: '1.0.0', date: '2026-09-06', changes: [
                         'Initial release',
@@ -1286,7 +1286,7 @@ var FaceOnMOve = FaceOnMOve || (() => {
                     ]},
                 ],
                 commands: [
-                    { syntax: 'menu', description: 'Open the config menu (same as bare `!fomo`; uses selection or global) (GM)', version: '1.0.0' },
+                    { syntax: 'menu', description: 'Open the config menu (same as bare !fomo; uses selection or global) (GM)', version: '1.0.0' },
                     { syntax: 'enable', description: 'Enable facing for selected tokens', version: '1.0.0' },
                     { syntax: 'disable', description: 'Disable facing for selected tokens', version: '1.0.0' },
                     { syntax: 'on', description: 'Global master switch ON (GM)', version: '1.0.0' },
