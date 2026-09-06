@@ -24,7 +24,7 @@ Per-player map perception for Roll20. Split players onto individual copies of a 
 
 ## Quick Start
 
-**One-command setup** (experimental/Jumpgate sandbox):
+**One-command setup** (Latest sandbox — Mod Script Sandbox v1.5):
 1. Create your master page
 2. Make one blank page named `GL-SCRATCH`, duplicate it once per player
 3. Select party tokens, run: `!gaslight quick` — clones the master onto the scratch pages, configures the group, and splits in one step
@@ -43,7 +43,7 @@ Per-player map perception for Roll20. Split players onto individual copies of a 
 | Command | Description |
 |---------|-------------|
 | `!gaslight setup [group]` | Quick-configure from duplicate pages (group name optional) |
-| `!gaslight quick [group] [players...]` | Configure + split in one step, cloning onto copies/`GL-SCRATCH` pages (experimental sandbox) |
+| `!gaslight quick [group] [players...]` | Configure + split in one step, cloning onto copies/`GL-SCRATCH` pages (Latest sandbox v1.5) |
 | `!gaslight split <group> [--force]` | Activate group (test-first) |
 | `!gaslight merge [group]` | End a split; players return to their previous split (or banner). No arg = most recent split |
 | `!gaslight merge-all` | End all active splits at once |
@@ -294,6 +294,9 @@ Applied script examples (with handout generation):
 - **madness** - Afflicted players see all tokens as enemies
 
 ## Changelog
+
+### v2.3.1
+- Terminology: refer to the sandbox as the "Latest sandbox (Mod Script Sandbox v1.5)" instead of "experimental/Jumpgate", matching Roll20's current Mod Scripts settings. No behavior change.
 
 ### v2.3.0
 - `!gaslight quick [group] [players...]` — configure + split in one step, cloning the master onto page copies (and reusable `GL-SCRATCH` pages) via `graphic.createCopy` (experimental sandbox)
